@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="goldA" x1="96" y1="64" x2="408" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6C9"/>
+      <stop offset="0.42" stop-color="#F2D978"/>
+      <stop offset="1" stop-color="#C79B27"/>
+    </linearGradient>
+    <linearGradient id="innerA" x1="192" y1="152" x2="320" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9DE"/>
+      <stop offset="1" stop-color="#F8E7A7"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(226 174) rotate(62) scale(112 120)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadowA" x="34" y="36" width="444" height="444" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#9B7619" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadowA)">
+    <path d="M256 52 398 134v164L256 460 114 298V134L256 52Z" fill="url(#goldA)" stroke="#A57914" stroke-width="10"/>
+    <path d="M256 88 366 152v128L256 424 146 280V152L256 88Z" fill="#FCEBAF" opacity="0.82"/>
+    <circle cx="256" cy="248" r="102" fill="url(#innerA)" stroke="#B48921" stroke-width="7"/>
+    <circle cx="256" cy="248" r="78" fill="#FFF5CF" stroke="#D3B25D" stroke-width="4"/>
+    <path d="M256 196c-28 0-50 22-50 50s22 50 50 50 50-22 50-50-22-50-50-50Zm0 20 28 28-42 52 14-38-36-10 36-32Z" fill="#8B6618"/>
+    <ellipse cx="242" cy="184" rx="112" ry="94" fill="url(#glowA)"/>
+  </g>
+</svg>

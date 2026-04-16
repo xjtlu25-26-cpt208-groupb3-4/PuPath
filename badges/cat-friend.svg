@@ -1,0 +1,27 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="goldD" x1="96" y1="64" x2="408" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6C9"/>
+      <stop offset="0.42" stop-color="#F2D978"/>
+      <stop offset="1" stop-color="#C79B27"/>
+    </linearGradient>
+    <linearGradient id="innerD" x1="172" y1="152" x2="336" y2="356" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FCE7F3"/>
+      <stop offset="1" stop-color="#F9A8D4"/>
+    </linearGradient>
+    <filter id="shadowD" x="34" y="36" width="444" height="444" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#9B7619" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadowD)">
+    <path d="M256 52 398 134v164L256 460 114 298V134L256 52Z" fill="url(#goldD)" stroke="#A57914" stroke-width="10"/>
+    <path d="M256 88 366 152v128L256 424 146 280V152L256 88Z" fill="#FCEBAF" opacity="0.82"/>
+    <circle cx="256" cy="248" r="102" fill="url(#innerD)" stroke="#B48921" stroke-width="7"/>
+    <path d="M209 228c0-26 21-47 47-47s47 21 47 47v42c0 26-21 47-47 47s-47-21-47-47v-42Z" fill="#7E22CE" fill-opacity="0.86"/>
+    <circle cx="234" cy="246" r="8" fill="#F5D0FE"/>
+    <circle cx="278" cy="246" r="8" fill="#F5D0FE"/>
+    <path d="M232 278c7 10 15 15 24 15s17-5 24-15" stroke="#F5D0FE" stroke-width="8" stroke-linecap="round"/>
+    <path d="M228 208h-20l-18-26" stroke="#7E22CE" stroke-width="10" stroke-linecap="round"/>
+    <path d="M284 208h20l18-26" stroke="#7E22CE" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>
