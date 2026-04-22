@@ -1,0 +1,1 @@
+import{j as e}from"./vendor-react-XYlGIG1Z.js";function r({title:l,subtitle:s,action:t}){return e.jsxs("div",{className:"flex items-start justify-between gap-3",children:[e.jsxs("div",{children:[e.jsx("h2",{className:"pp-section-title",children:l}),s?e.jsx("p",{className:"mt-1 text-xs text-slate-500",children:s}):null]}),t?e.jsx("div",{children:t}):null]})}export{r as P};

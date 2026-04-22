@@ -1,0 +1,1 @@
+import{j as p}from"./vendor-react-XYlGIG1Z.js";function s(...t){return t.filter(Boolean).join(" ")}function i({active:t=!1,className:e,children:n,...o}){return p.jsx("button",{className:s("pp-chip",t&&"pp-chip-active",e),type:"button",...o,children:n})}export{i as T};
