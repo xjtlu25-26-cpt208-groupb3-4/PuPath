@@ -71,6 +71,7 @@ PuPath/
 │  ├─ types/               # TypeScript types
 │  └─ utils/               # Utilities (coordinates, storage, progress, ...)
 ├─ public/                 # Static assets
+├─ ailogs/                 # Primary AI prompts used for core components
 ├─ .github/workflows/      # GitHub Pages workflow
 └─ dist/                   # Build output
 ```
