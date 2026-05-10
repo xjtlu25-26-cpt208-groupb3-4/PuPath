@@ -85,7 +85,7 @@ PuPath/
 ├─ manifest.webmanifest
 ├─ registerSW.js
 ├─ sw.js
-└─ workbox-*.js
+└─ workbox-8c29f6e4.js
 ```
 
 ---
