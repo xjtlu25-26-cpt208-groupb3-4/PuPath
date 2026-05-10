@@ -1,4 +1,4 @@
-﻿# PuPath
+# PuPath
 
 PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool University (XJTLU), SIP Campus. It combines map navigation, guided tours, recommendations, check-ins, and story cards into one integrated experience.
 
@@ -41,15 +41,10 @@ PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool Univer
 
 ## Tech Stack
 
-- **Framework**: React 19 + TypeScript
-- **Build tool**: Vite 7
-- **Routing**: React Router 7
-- **State management**: Zustand
-- **i18n**: i18next + react-i18next
-- **Map**: AMap JS API (primary) + MapLibre (fallback rendering)
-- **Styling**: Tailwind CSS
-- **PWA**: vite-plugin-pwa
-- **Testing**: Vitest, Playwright
+- **Frontend runtime**: static web app (deployed build)
+- **Map**: AMap (Gaode) JS API
+- **Weather**: Open-Meteo
+- **PWA artifacts**: `manifest.webmanifest`, `registerSW.js`, `sw.js`, `workbox-*.js`
 
 ---
 
@@ -57,96 +52,63 @@ PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool Univer
 
 ```text
 PuPath/
-├─ src/
-│  ├─ app/                 # App entry and shell
-│  ├─ components/          # UI and map components
-│  ├─ config/              # Runtime config and campus center
-│  ├─ data/                # Local data sources (pois/routes/recommendations/...)
-│  ├─ hooks/               # Business hooks (weather, badge auto-unlock, ...)
-│  ├─ locales/             # i18n resources (zh/en)
-│  ├─ pages/               # Page modules
-│  ├─ router/              # Route definitions
-│  ├─ services/            # Map and weather services
-│  ├─ stores/              # Zustand stores
-│  ├─ types/               # TypeScript types
-│  └─ utils/               # Utilities (coordinates, storage, progress, ...)
-├─ public/                 # Static assets
-├─ ailogs/                 # Primary AI prompts used for core components
-├─ .github/workflows/      # GitHub Pages workflow
-└─ dist/                   # Build output
+├─ ailogs/                 # AI prompts used for core components
+├─ assets/                 # Bundled JS/CSS assets
+├─ badges/                 # Badge images
+├─ icons/                  # App icons and PWA icons
+├─ images/
+│  └─ pois/                # POI images
+├─ treasures/              # Treasure collectible images
+├─ README.md
+├─ data-handling.md        # Data handling evidence for submission
+├─ index.html
+├─ manifest.webmanifest
+├─ registerSW.js
+├─ sw.js
+└─ workbox-*.js
 ```
 
 ---
 
-## Local Development
+## AI Logs
 
-### 1. Requirements
-- Node.js 20+
-- npm 10+
-
-### 2. Install dependencies
-```bash
-npm install
-```
-
-### 3. Configure environment variables
-Copy `.env.example` to `.env`:
-
-```env
-VITE_MAP_PROVIDER=amap
-VITE_AMAP_KEY=
-VITE_AMAP_SECURITY_JS_CODE=
-VITE_MAPTILER_KEY=
-VITE_WEATHER_PROVIDER=openmeteo
-```
-
-Notes:
-- Recommended map provider: `VITE_MAP_PROVIDER=amap`
-- Coordinate system is maintained in **GCJ-02** (aligned with AMap)
-- Open-Meteo weather API does not require an API key by default
-
-### 4. Run dev server
-```bash
-npm run dev
-```
-
-### 5. Build and preview
-```bash
-npm run build
-npm run preview
-```
+This project includes an `/ailogs` folder containing the primary prompts used in AI-assisted coding for core components (Vibe Coding Logs).
 
 ---
 
-## NPM Scripts
+## Data Handling
 
-```bash
-npm run dev        # Start development server
-npm run build      # Type-check + production build
-npm run preview    # Preview production build
-npm run typecheck  # TypeScript check only
-npm run lint       # Run ESLint
-npm run test       # Run Vitest in watch mode
-npm run test:run   # Run Vitest once
-npm run e2e        # Run Playwright E2E tests
-```
+Data handling evidence is documented in:
+
+- [data-handling.md](./data-handling.md)
 
 ---
 
 ## Deployment (GitHub Pages)
 
-This repository includes an automated GitHub Pages workflow:
-- File: `.github/workflows/deploy.yml`
-- Trigger: push to `main`
-- Published artifact: `dist/`
+This repository is the **public deployment repository** and can be hosted directly with GitHub Pages.
 
-### First-time setup
+### Recommended Pages settings
 1. Open repository **Settings** → **Pages**
-2. Set source to **GitHub Actions**
-3. Push to `main` and wait for **Deploy PuPath to GitHub Pages** to complete
+2. Set source to **Deploy from a branch**
+3. Select branch `main`, folder `/ (root)`
+4. Save and wait for the site URL to become active
 
-### Manual fallback deployment (optional)
-If GitHub Actions is unavailable, run `npm run build` locally and deploy the `dist` content manually.
+### Updating this repository after new builds
+
+When you produce a new build from your development workspace, copy updated static files to this repository root:
+- `index.html`
+- `assets/`
+- `icons/`
+- `images/`
+- `badges/`
+- `treasures/`
+- `manifest.webmanifest`
+- `registerSW.js`
+- `sw.js`
+- `workbox-*.js`
+
+Then commit and push to `main`.
 
 ---
 
