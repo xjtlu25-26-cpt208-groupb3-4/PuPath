@@ -5,6 +5,7 @@ PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool Univer
 - Target users: freshmen, current students, visitors, and staff
 - Form: PWA (installable on desktop/mobile)
 - Deployment: GitHub Pages
+- Live URL: [https://xjtlu25-26-cpt208-groupb3-4.github.io/PuPath/]
 
 ---
 
@@ -42,6 +43,7 @@ PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool Univer
 ## Tech Stack
 
 - **Frontend runtime**: static web app (deployed build)
+- **Source project stack**: React + TypeScript + Vite
 - **Map**: AMap (Gaode) JS API
 - **Weather**: Open-Meteo
 - **PWA artifacts**: `manifest.webmanifest`, `registerSW.js`, `sw.js`, `workbox-*.js`
@@ -109,6 +111,17 @@ When you produce a new build from your development workspace, copy updated stati
 - `workbox-*.js`
 
 Then commit and push to `main`.
+
+### Minimal setup / update checklist
+
+1. Build the latest production output from your development workspace.
+2. Replace root static files/folders in this repository with the latest build artifacts.
+3. Commit and push to `main`.
+4. Open the live URL and verify:
+   - home page loads without console errors
+   - map renders and recenter works
+   - at least one route can start navigation
+   - check-in page is reachable
 
 ---
 
