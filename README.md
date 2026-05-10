@@ -40,7 +40,7 @@ PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool Univer
 
 ---
 
-## Playful Features (Core Feature Set)
+## Playful Features
 
 The system includes more than 3 must-have playful features:
 
@@ -148,16 +148,6 @@ Then commit and push to `main`.
 Current optimizations include:
 - Map styles are loaded on demand (only when map-related pages are opened)
 - PWA precache excludes heavy map bundles to reduce first-install and first-load size
-
----
-
-## Pre-release Checklist (Recommended)
-
-- Location, recenter, and cross-campus underground routing
-- Full bilingual verification (labels, story cards, recommendation text)
-- Daily check-in limit and collectible/badge linkage
-- Compatibility in WeChat in-app browser (iOS/Android)
-- GitHub Pages cache/version update behavior
 
 ---
 
