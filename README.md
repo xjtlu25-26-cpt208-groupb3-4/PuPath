@@ -5,7 +5,7 @@ PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool Univer
 - Target users: freshmen, current students, visitors, and staff
 - Form: PWA (installable on desktop/mobile)
 - Deployment: GitHub Pages
-- Live URL: [https://xjtlu25-26-cpt208-groupb3-4.github.io/PuPath/]
+- Live URL: [https://xjtlu25-26-cpt208-groupb3-4.github.io/PuPath/](https://xjtlu25-26-cpt208-groupb3-4.github.io/PuPath/)
 
 ---
 
@@ -37,6 +37,24 @@ PuPath is a mobile-first campus tour web app for Xi'an Jiaotong-Liverpool Univer
 - Favorites, wishlist, visited, and recent views
 - Accessibility options (font size levels, high contrast, screen-reader support)
 - Clear local records (global local data reset)
+
+---
+
+## Playful Features (Core Feature Set)
+
+The system includes more than 3 must-have playful features:
+
+1. **Location Check-in + Random Collectibles** (`/scan`)  
+   Users can check in once per day inside the campus area and receive a random virtual collectible (Captain Bird / XJTLU Bear, Blue/Purple/Gold rarity).
+
+2. **Badge Unlock System** (`/my`)  
+   Interaction milestones (exploration, check-in progress, behavior completion) unlock visual badges and earned-time records.
+
+3. **Story Cards for POIs** (`/tours`, `/map`)  
+   Contextual story cards provide place narratives and tailored recommendations by POI type (study, food, cat, flower, etc.).
+
+4. **Theme-based Exploration Layers** (`/map`, `/discover`)  
+   Users can explore campus by themed categories (Cat, Flower, Photography, Museum, Food) with linked detail and navigation actions.
 
 ---
 
@@ -130,6 +148,16 @@ Then commit and push to `main`.
 Current optimizations include:
 - Map styles are loaded on demand (only when map-related pages are opened)
 - PWA precache excludes heavy map bundles to reduce first-install and first-load size
+
+---
+
+## Pre-release Checklist (Recommended)
+
+- Location, recenter, and cross-campus underground routing
+- Full bilingual verification (labels, story cards, recommendation text)
+- Daily check-in limit and collectible/badge linkage
+- Compatibility in WeChat in-app browser (iOS/Android)
+- GitHub Pages cache/version update behavior
 
 ---
 
