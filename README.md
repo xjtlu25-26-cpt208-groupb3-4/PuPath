@@ -133,16 +133,6 @@ Current optimizations include:
 
 ---
 
-## Pre-release Checklist (Recommended)
-
-- Location, recenter, and cross-campus underground routing
-- Full bilingual verification (labels, story cards, recommendation text)
-- Daily check-in limit and collectible/badge linkage
-- Compatibility in WeChat in-app browser (iOS/Android)
-- GitHub Pages cache/version update behavior
-
----
-
 ## Disclaimer
 
 This project is built for course and demo scenarios. Map data, routing logic, and POI content will continue to evolve.
